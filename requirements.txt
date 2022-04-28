@@ -1,0 +1,4 @@
+PyQt5==5.15.6
+pywin32==303
+requests==2.27.1
+SpeechRecognition==3.8.1
