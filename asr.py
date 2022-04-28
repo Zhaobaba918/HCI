@@ -83,7 +83,6 @@ def open_bilibili():
 def get_news():
     d = date.today()
     url = "http://api.tianapi.com/ncov/index?key=d334721cf6eba2d619a5855420ec352c&data="+str(d)
-    # url = "http://api.tianapi.com/ncov/index?key=d334721cf6eba2d619a5855420ec352c&data=" + '2022-04-25'
     r = requests.get(url)
     news = r.json()
     speaker = win32com.client.Dispatch("SAPI.SpVoice")
@@ -92,7 +91,6 @@ def get_news():
 def get_high_risk():
     d = date.today()
     url = "http://api.tianapi.com/ncov/index?key=d334721cf6eba2d619a5855420ec352c&data="+str(d)
-    # url = "http://api.tianapi.com/ncov/index?key=d334721cf6eba2d619a5855420ec352c&data=" + '2022-04-25'
     r = requests.get(url)
     news = r.json()
     speaker = win32com.client.Dispatch("SAPI.SpVoice")
